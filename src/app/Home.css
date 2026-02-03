@@ -1,0 +1,75 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #111;
+    padding: 20px;
+}
+
+.home-card {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-box {
+    width: 80px;
+    height: 80px;
+    background-color: #7c3aed;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.home-logo h1 {
+    color: #fff;
+    font-size: 28px;
+    margin: 0;
+}
+
+.home-logo p {
+    color: #888;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+}
+
+.home-divider {
+    width: 50px;
+    height: 3px;
+    background-color: #7c3aed;
+    border-radius: 2px;
+    margin: 25px 0;
+}
+
+.home-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home-buttons .btn {
+    margin-top: 0;
+}
+
+.home-footer {
+    color: #555;
+    font-size: 12px;
+    margin-top: 30px;
+    text-align: center;
+}

@@ -1,0 +1,83 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form .alert {
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.login-form .alert-error {
+    background-color: #450a0a;
+    color: #f87171;
+    border: 1px solid #ef4444;
+}
+
+.cpf-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+}
+
+.cpf-label {
+    font-size: 11px;
+    color: #666;
+    display: block;
+}
+
+.cpf-value {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 2px;
+}
+
+.cpf-alterar {
+    background: none;
+    border: none;
+    color: #7c3aed;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.cpf-alterar:hover {
+    text-decoration: underline;
+}
+
+.voltar-btn {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.voltar-btn:hover {
+    color: #7c3aed;
+}
+
+.login-form .auth-link {
+    text-align: center;
+    margin-top: 18px;
+    color: #888;
+    font-size: 14px;
+}
+
+.login-form .auth-link a {
+    color: #7c3aed;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-form .auth-link a:hover {
+    text-decoration: underline;
+}

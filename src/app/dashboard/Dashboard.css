@@ -1,0 +1,109 @@
+.dashboard-container {
+    min-height: 100vh;
+    background-color: #111;
+}
+
+/* navbar */
+.dashboard-nav {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+    padding: 14px 24px;
+}
+
+.nav-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-logo-box {
+    width: 36px;
+    height: 36px;
+    background-color: #7c3aed;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-logo span {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav-content .btn {
+    margin-top: 0;
+}
+
+/* conteúdo */
+.dashboard-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dashboard-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.dashboard-card h1 {
+    color: #fff;
+    font-size: 22px;
+    margin: 0 0 6px 0;
+}
+
+.dashboard-card h2 {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 0 18px 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #333;
+}
+
+.dashboard-card > p {
+    color: #888;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* dados do usuário */
+.dado-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.dado-item:last-child {
+    border-bottom: none;
+}
+
+.dado-label {
+    color: #888;
+    font-size: 14px;
+}
+
+.dado-valor {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
