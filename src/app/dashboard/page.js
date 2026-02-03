@@ -2,9 +2,9 @@
 
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { useAuth } from '../../../context/AuthContext';
-import Button from '../../../components/ui/Button';
-import Loading from '../../../components/ui/Loading';
+import { useAuth } from '../../context/AuthContext';
+import Button from '../../componentes/ui/Button';
+import Loading from '../../componentes/ui/Loading';
 import './Dashboard.css';
 
 const Dashboard = () => {

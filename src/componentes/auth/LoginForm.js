@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { authService } from '../../services/authService';
 import { useAuth } from '../../context/AuthContext';
@@ -15,7 +17,7 @@ const LoginForm = () => {
     const { login } = useAuth();
     const router = useRouter();
 
-    // primeira etapa: verificar se CPF existe
+
     const handlePreSignin = async () => {
         if (!username.trim()) {
             setError('CPF é obrigatório');
@@ -35,7 +37,7 @@ const LoginForm = () => {
         }
     };
 
-    // segunda etapa: fazer login com senha
+    
     const handleSignin = async () => {
         if (!password.trim()) {
             setError('Senha é obrigatória');
@@ -121,7 +123,7 @@ const LoginForm = () => {
             )}
 
             <p className="auth-link">
-                Não tem conta? <a href="/signup">Cadastre-se</a>
+                Não tem conta? <a href="/singup">Cadastre-se</a>
             </p>
         </div>
     );
