@@ -1,47 +1,68 @@
+# Autenticação 
 
 
-##  Tecnologias Utilizadas
+### Instalação
+```bash
+git clone https://github.com/GuilhermePossenti/Projeto-Fluxo-de-Autentica-o.git
+cd Projeto-Fluxo-de-Autentica-o
+npm install
+npm run dev
+```
 
-- **Next.js** - Framework React para desenvolvimento web
-- **React** - Biblioteca para construção de interfaces
-- **Axios** - Cliente HTTP para comunicação com a API
-- **CSS** - Estilização dos componentes
+Acesse: `http://localhost:3000`
 
----
+##  Testar
 
-##  Estrutura do Projeto
+### Credenciais
+- **CPF**: 08068329919
+- **Email**: gui.possenti789@gmail.com
+- **Telefone**: 49999306867
+- **Senha**: 123456
+
+### Fluxo
+1. Home → "Cadastrar-se" → Preencher formulário → "Cadastrar"
+2. Login → Inserir CPF → "Continuar" → Inserir senha → "Entrar"
+
+
+## ✅ Implementado
+
+**Fase 1 - Signup**
+- ✅ Check Email
+- ✅ Check Phone
+- ✅ Signup
+
+**Fase 2 - Login**
+- ✅ Pre-Signin
+- ✅ Signin
+
+
+## 📁 Estrutura
 
 ```
 src/
-├── app/                        # Páginas da aplicação (rotas)
-│   ├── page.js                 # Página Home
-│   ├── Home.css                # Estilo da Home
-│   ├── Auth.css                # Estilos compartilhados de autenticação
-│   ├── layout.js               # Layout global com AuthProvider
-│   ├── globals.css             # Estilos globais
-│   ├── login/
-│   │   └── page.js             # Página de Login
-│   ├── signup/
-│   │   └── page.js             # Página de Cadastro
-│   └── dashboard/
-│       ├── page.js             # Página Dashboard (protegida)
-│       └── Dashboard.css       # Estilo do Dashboard
-├── components/
-│   ├── ui/                     # Componentes de interface reutilizáveis
-│   │   ├── Button.js           # Componente de botão
-│   │   ├── Button.css
-│   │   ├── Input.js            # Componente de campo de entrada
-│   │   ├── Input.css
-│   │   ├── Loading.js          # Componente de carregamento
-│   │   └── Loading.css
-│   └── auth/                   # Componentes de autenticação
-│       ├── SignupForm.js       # Formulário de cadastro
-│       ├── SignupForm.css
-│       ├── LoginForm.js        # Formulário de login
-│       └── LoginForm.css
-├── services/                   # Comunicação com a API
-│   ├── api.js                  # Instância do axios configurada
-│   └── authService.js          # Funções de chamada aos endpoints
-└── context/                    # Estado global
-    └── AuthContext.js           # Context de autenticação
+├── app/               # Páginas Next.js
+├── componentes/       # Componentes React
+├── services/          # API (authService, axios)
+└── context/           # AuthContext
 ```
+
+##  Ferramentas
+
+- Next.js 14
+- React 18
+- Axios
+- JWT
+- CSS Modular
+
+## 📋 API
+
+Base: `https://apiinterview.threepixels.com.br/api/v1`
+
+- `POST /authenticate/check/email` - Validar email
+- `POST /authenticate/check/phone` - Validar telefone
+- `POST /authenticate/signup` - Registrar
+- `POST /authenticate/pre/signin` - Verificar CPF
+- `POST /authenticate/signin` - Fazer login
+- `POST /authenticate/check` - Validar token
+- `POST /authenticate/refresh` - Renovar token
+- `POST /authenticate/signout` - Logout
