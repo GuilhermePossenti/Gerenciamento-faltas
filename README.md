@@ -26,17 +26,17 @@ Acesse: `http://localhost:3000`
 
 ## ✅ Implementado
 
-**Fase 1 - Signup**
+**Fase 1 - Singup**
 - ✅ Check Email
 - ✅ Check Phone
 - ✅ Signup
 
 **Fase 2 - Login**
-- ✅ Pre-Signin
-- ✅ Signin
+- ✅ Pre-Singin
+- ✅ Singin
 
 
-## 📁 Estrutura
+##  Estrutura
 
 ```
 src/
@@ -60,9 +60,9 @@ Base: `https://apiinterview.threepixels.com.br/api/v1`
 
 - `POST /authenticate/check/email` - Validar email
 - `POST /authenticate/check/phone` - Validar telefone
-- `POST /authenticate/signup` - Registrar
-- `POST /authenticate/pre/signin` - Verificar CPF
-- `POST /authenticate/signin` - Fazer login
+- `POST /authenticate/singup` - Registrar
+- `POST /authenticate/pre/singin` - Verificar CPF
+- `POST /authenticate/singin` - Fazer login
 - `POST /authenticate/check` - Validar token
 - `POST /authenticate/refresh` - Renovar token
-- `POST /authenticate/signout` - Logout
+- `POST /authenticate/singout` - Logout
