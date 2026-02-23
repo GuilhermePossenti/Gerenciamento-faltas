@@ -29,7 +29,7 @@ Acesse: `http://localhost:3000`
 **Fase 1 - Singup**
 - ✅ Check Email
 - ✅ Check Phone
-- ✅ Signup
+- ✅ Singup
 
 **Fase 2 - Login**
 - ✅ Pre-Singin
