@@ -14,7 +14,7 @@ Acesse: `http://localhost:3000`
 ##  Testar
 
 ### Credenciais
-- **CPF**: 08068329919
+- **CPF**: ***-***-***-**
 - **Email**: gui.possenti789@gmail.com
 - **Telefone**: 49999306867
 - **Senha**: 123456
