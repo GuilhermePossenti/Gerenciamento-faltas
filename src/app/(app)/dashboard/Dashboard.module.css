@@ -1,0 +1,56 @@
+.pagina { display: flex; flex-direction: column; gap: 24px; max-width: 1200px; }
+
+.cabecalho {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.titulo    { font-size: 22px; font-weight: 700; color: var(--text); }
+.subtitulo { font-size: 14px; color: var(--text-muted); margin-top: 2px; }
+
+/* Cards de stats */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.cardBlue    { border-left: 4px solid var(--primary); }
+.cardDarkRed { border-left: 4px solid #7f1d1d; background: #fff1f2; }
+.cardRed     { border-left: 4px solid var(--danger); }
+.cardYellow  { border-left: 4px solid var(--warning); }
+.cardInfo   { display: flex; flex-direction: column; }
+.cardValor  { font-size: 28px; font-weight: 700; color: var(--text); line-height: 1; }
+.cardLabel  { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+.cardSub    { font-size: 11px; color: var(--text-muted); }
+
+/* Grade de conteúdo */
+.grade {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 0 0 300px;
+  min-width: 260px;
+}
+.legendaItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}

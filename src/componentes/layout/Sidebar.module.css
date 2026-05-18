@@ -1,0 +1,120 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-w);
+  height: 100vh;
+  background: var(--sidebar-bg);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 100;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 16px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  flex-shrink: 0;
+}
+.logoIcon {
+  width: 36px;
+  height: 36px;
+  background: var(--primary);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+.logoTexto { display: flex; flex-direction: column; }
+.logoNome  { font-size: 14px; font-weight: 700; color: #f1f5f9; letter-spacing: .3px; }
+.logoSub   { font-size: 10px; color: var(--sidebar-muted); letter-spacing: .3px; }
+
+/* Nav */
+.nav {
+  flex: 1;
+  padding: 16px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow-y: auto;
+}
+.navLabel {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .8px;
+  color: var(--sidebar-muted);
+  padding: 0 8px;
+  margin-bottom: 6px;
+}
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 6px;
+  color: var(--sidebar-text);
+  font-size: 14px;
+  font-weight: 500;
+  transition: background .15s, color .15s;
+}
+.navItem:hover { background: var(--sidebar-hover); color: #f1f5f9; }
+.navItemAtivo  { background: var(--sidebar-active) !important; color: #fff !important; }
+.navIcone { font-size: 16px; width: 20px; text-align: center; }
+
+/* Rodapé */
+.rodape {
+  padding: 12px 8px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  background: rgba(255,255,255,.06);
+}
+.avatar {
+  width: 32px;
+  height: 32px;
+  background: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+.usuarioInfo { display: flex; flex-direction: column; min-width: 0; }
+.usuarioNome { font-size: 12px; font-weight: 600; color: #f1f5f9; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.usuarioCargo { font-size: 11px; color: var(--sidebar-muted); }
+.btnSair {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--sidebar-muted);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background .15s, color .15s;
+  width: 100%;
+}
+.btnSair:hover { background: rgba(220,38,38,.2); color: #fca5a5; }

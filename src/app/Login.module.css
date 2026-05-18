@@ -1,0 +1,105 @@
+.pagina {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e2a3b 0%, #2563eb 100%);
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 32px 32px 24px;
+  background: linear-gradient(160deg, #1e2a3b, #2d3f57);
+  color: #fff;
+  text-align: center;
+}
+.logo {
+  width: 56px;
+  height: 56px;
+  background: var(--primary);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  box-shadow: 0 4px 12px rgba(37,99,235,.5);
+}
+.logoSigla { font-size: 22px; font-weight: 800; color: #fff; letter-spacing: .5px; }
+.titulo    { font-size: 22px; font-weight: 700; color: #fff; }
+.subtitulo { font-size: 13px; color: #cbd5e1; }
+.escola    { font-size: 12px; color: #94a3b8; margin-top: 2px; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 28px 32px;
+}
+
+.alertaErro {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 14px;
+  background: var(--danger-light);
+  color: var(--danger);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.btnEntrar {
+  width: 100%;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+/* Seção de ajuda / credenciais */
+.ajuda {
+  margin: 0 32px 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  overflow: hidden;
+}
+.ajuda summary {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-weight: 500;
+  background: #f8fafc;
+  user-select: none;
+}
+.ajuda summary:hover { background: #f1f5f9; }
+.tabelaDemo {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+}
+.tabelaDemo th,
+.tabelaDemo td {
+  padding: 6px 12px;
+  text-align: left;
+  font-size: 12px;
+  border-top: 1px solid var(--border);
+}
+.tabelaDemo th {
+  color: var(--text-muted);
+  font-weight: 600;
+  background: #f8fafc;
+}
+.tabelaDemo td { color: var(--text); font-family: monospace; }

@@ -1,24 +1,10 @@
 'use client';
 
-import React from 'react';
-import LoginForm from '../../componentes/auth/LoginForm';
-import '../Auth.css';
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
-const LoginPage = () => {
-    return (
-        <div className="auth-container">
-            <div className="auth-card">
-
-                <div className="auth-logo">
-                    <div className="auth-logo-box">3P</div>
-                    <h2>Bem-vindo de volta</h2>
-                    <p>Faça login na sua conta</p>
-                </div>
-
-                <LoginForm />
-            </div>
-        </div>
-    );
-};
-
-export default LoginPage;
+export default function LoginRedirect() {
+  const router = useRouter();
+  useEffect(() => { router.replace('/'); }, [router]);
+  return null;
+}

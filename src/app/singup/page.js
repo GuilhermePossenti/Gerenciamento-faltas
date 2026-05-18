@@ -1,24 +1,10 @@
 'use client';
 
-import React from 'react';
-import SingupForm from '../../componentes/auth/SingupForm';
-import '../Auth.css';
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
-const SignupPage = () => {
-    return (
-        <div className="auth-container">
-            <div className="auth-card">
-
-                <div className="auth-logo">
-                    <div className="auth-logo-box">3P</div>
-                    <h2>Criar conta</h2>
-                    <p>Preencha os dados abaixo para se cadastrar</p>
-                </div>
-
-                <SingupForm />
-            </div>
-        </div>
-    );
-};
-
-export default SignupPage;
+export default function SignupRedirect() {
+  const router = useRouter();
+  useEffect(() => { router.replace('/'); }, [router]);
+  return null;
+}
